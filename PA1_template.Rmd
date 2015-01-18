@@ -1,13 +1,18 @@
 ---
-title: "Reproducible Research: Peer Assessment 1"
+title: 'Reproducible Research: Peer Assessment 1'
 output: html_document
-
 ---
 
-**Load Data** 
+
+**Download data and put it into a data frame** 
+
 
 ```{r}
+fileurl <- "http://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
+download.file(fileurl, "repdata-data-activity.zip", mode="wb")
+unzip("repdata-data-activity.zip")
 activity <- read.csv("activity.csv")
+
 ```
 ***What is mean total number of steps taken per day?***
 
@@ -33,5 +38,4 @@ mean(Total_steps$steps)
 ```{r}
 median(Total_steps$steps)
 ```
-
 
