@@ -1,8 +1,10 @@
 ---
-title: "Reproducible Research: Peer Assessment 1"
-output: html_document
+output:
+  html_document:
+    keep_md: yes
 ---
 
+**Reproducible Research: Peer Assessment 1**
 
 **Download data and put it into a data frame** 
 
@@ -24,6 +26,11 @@ Total_steps <- aggregate(steps ~ date, data = activity, sum)
 MyMainLabel <- "Total steps by day";  MyXLabel <- "Steps per day"; MyYLabel <- "Number of times"
 
 ## Show on Histogram
+hist(Total_steps$steps, main = MyMainLabel , xlab = MyXLabel, ylab = MyYLabel,col="green")
+```
+
+
+```{r, echo=FALSE}
 hist(Total_steps$steps, main = MyMainLabel , xlab = MyXLabel, ylab = MyYLabel,col="green")
 ```
 

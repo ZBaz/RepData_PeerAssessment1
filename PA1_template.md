@@ -1,5 +1,5 @@
-# Reproducible Research: Peer Assessment 1
 
+**Reproducible Research: Peer Assessment 1**
 
 **Download data and put it into a data frame** 
 
@@ -26,6 +26,9 @@ hist(Total_steps$steps, main = MyMainLabel , xlab = MyXLabel, ylab = MyYLabel,co
 ```
 
 ![plot of chunk unnamed-chunk-2](./PA1_template_files/figure-html/unnamed-chunk-2.png) 
+
+
+![plot of chunk unnamed-chunk-3](./PA1_template_files/figure-html/unnamed-chunk-3.png) 
 
 **Mean of Total Steps** 
 
